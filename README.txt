@@ -1,15 +1,8 @@
 
 # README
 
-## Project Title: Predictive Road and Pavement Analytics (AIT 614 Final Project)
+## Project Title: Predictive Road and Pavement Analytics
 
-## Team Members
-- Dhanushi Panga
-- Phani Satya Sai Pamarthi
-- Raja Ruthvik Shetty
-- Suraj Bharadwaj
-- Mandava Venkata Yatish
-- Chandra Nalla
 
 ## Objective
 This project focuses on predictive modeling using multi-domain datasets comprising pavement condition, weather records, traffic trends, and textual reviews. The goal is to integrate structured and unstructured data to build regression and classification models, perform anomaly detection, and derive insights for civil infrastructure analytics.
