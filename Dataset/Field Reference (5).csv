@@ -1,0 +1,189 @@
+TABLE_NAME,FIELD_NAME,FIELD_ALIAS,FIELD_DESCRIPTION,FIELD_UNIT,FIELD_CODETYPE,UNIT_SYSTEM
+EXPERIMENT_SECTION,STATE_CODE,State Code,Numerical code for state or province. U.S. codes are consistent with Federal Information Processing Standards.,,STATE_PROVINCE,
+EXPERIMENT_SECTION,STATE_CODE_EXP,State Code (Code Expansion),Numerical code for state or province. U.S. codes are consistent with Federal Information Processing Standards. (Code Expansion),,,
+EXPERIMENT_SECTION,SHRP_ID,LTPP Section Identifier,Test section identification number assigned by LTPP program. Must be combined with STATE_CODE to be unique.,,,
+EXPERIMENT_SECTION,CONSTRUCTION_NO,Construction Number,Event number used to relate changes in pavement structure with other time dependent data elements. This field is set to 1 when a test section is initially accepted into LTPP and is incremented with each change to the layer structure.,,,
+EXPERIMENT_SECTION,CN_ASSIGN_DATE,Construction Number Assign Date,"The assignment date for the beginning of a construction event. It is equal to acceptance date when a test section is first included in LTPP, i.e. CONSTRUCTION_NO = 1.",,,
+EXPERIMENT_SECTION,CN_CHANGE_REASON,Construction Number Change Reason Code,IMP_TYPE rehabilitation and maintenance activity codes that caused the change in Construction Number (CONSTRUCTION_NO).,,MAINT_WORK,
+EXPERIMENT_SECTION,CN_CHANGE_REASON_EXP,Construction Number Change Reason Code (Code Expansion),IMP_TYPE rehabilitation and maintenance activity codes that caused the change in Construction Number (CONSTRUCTION_NO). (Code Expansion),,,
+EXPERIMENT_SECTION,RECORD_STATUS,Record Status,A code indicating the general quality of the data.,,,
+EXPERIMENT_SECTION,GPS_SPS,Experiment Classification Code,Code indicating if the section is a GPS or SPS section.,,GPS_SPS,
+EXPERIMENT_SECTION,GPS_SPS_EXP,Experiment Classification Code (Code Expansion),Code indicating if the section is a GPS or SPS section. (Code Expansion),,,
+EXPERIMENT_SECTION,EXPERIMENT_NO,Experiment Number Code,Code indicating to which LTPP experiment the pavement section is assigned.,,EXPERIMENT,
+EXPERIMENT_SECTION,EXPERIMENT_NO_EXP,Experiment Number Code (Code Expansion),Code indicating to which LTPP experiment the pavement section is assigned. (Code Expansion),,,
+EXPERIMENT_SECTION,STATUS,Status Code,Code indicating the status of a section for a given construction event.,,STATUS,
+EXPERIMENT_SECTION,STATUS_EXP,Status Code (Code Expansion),Code indicating the status of a section for a given construction event. (Code Expansion),,,
+EXPERIMENT_SECTION,ASSIGN_DATE,Assign Date,Date when a test section was assigned to the LTPP experiment. The experiment designation for a test section is the combination of EXPERIMENT_NO and GPS_SPS fields in the record.,,,
+EXPERIMENT_SECTION,DEASSIGN_DATE,Deassign Date,Date when a test section changed to another experiment or was placed in out of study status in the LTPP program (status = o).,,,
+EXPERIMENT_SECTION,SEAS_ID,Seasonal Identification Code,State specific seasonal identification code.,,,
+EXPERIMENT_SECTION,SUPPLEMENTAL,Supplemental Section Identification Code,A marker to identify state supplemental sections.,,,
+EXPERIMENT_SECTION,EXP_SECT_RS,Experiment Section Record Status,RECORD_STATUS for EXPERIMENT_SECTION table.,,,
+EXPERIMENT_SECTION,BASIC_INFO_RS,Basic Information Record Status,RECORD_STATUS from minimum RECORD_STATUS for selected BASIC_INFO tables.,,,
+EXPERIMENT_SECTION,PAV_STRUCT_RS,Pavement Structure Record Status,"RECORD_STATUS from minimum RECORD_STATUS of all layers for tst_l05b for this SHRP_ID, STATE_CODE, and CONSTRUCTION_NO.",,,
+EXPERIMENT_SECTION,TRAFFIC_RS,Traffic Record Status,RECORD_STATUS  from maximum RECORD_STATUS  for selected monitoring traffic tables.,,,
+EXPERIMENT_SECTION,CLIMATIC_RS,Climatic Record Status,RECORD_STATUS from maximum RECORD_STATUS for selected climatic tables.,,,
+EXPERIMENT_SECTION,PAVEMENT_FAMILY,Pavement Family,Code indicating pavement family assigned based on experiment design and layer structure of the pavement section.,,PAVEMENT_FAMILY,
+EXPERIMENT_SECTION,PAVEMENT_FAMILY_EXP,Pavement Family (Code Expansion),Code indicating pavement family assigned based on experiment design and layer structure of the pavement section. (Code Expansion),,,
+MON_DIS_AC_CRACK_INDEX,STATE_CODE,State Code,Numerical code for state or province. U.S. codes are consistent with Federal Information Processing Standards.,,STATE_PROVINCE,
+MON_DIS_AC_CRACK_INDEX,STATE_CODE_EXP,State Code (Code Expansion),Numerical code for state or province. U.S. codes are consistent with Federal Information Processing Standards. (Code Expansion),,,
+MON_DIS_AC_CRACK_INDEX,SHRP_ID,LTPP Section Identifier,Test section identification number assigned by LTPP program. Must be combined with STATE_CODE to be unique.,,,
+MON_DIS_AC_CRACK_INDEX,SURVEY_DATE,Survey Date,Date survey was performed.,,,
+MON_DIS_AC_CRACK_INDEX,HPMS16_CRACKING_PERCENT_AC,2016 HPMS AC Cracking Percentage,Percent of section cracked using 2016 HPMS Field Guide  definitions. Includes only longitudinal and fatigue cracking in assumed 1m wide wheelpaths.,%,,As-Collected
+MON_DIS_AC_CRACK_INDEX,MEPDG_CRACKING_PERCENT_AC,MEPDG AC Cracking Percentage,"The total area of alligator cracking summed across all levels of severity, divided by the total area of the test section, in accordance with MEPDG definitions. Note that LTPP alligator cracking interpretations are not restricted to the wheel path.",%,,As-Collected
+MON_DIS_AC_CRACK_INDEX,MEPDG_TRANS_CRACK_LENGTH_AC,MEPDG AC Transverse Cracking Length,"Total length of sealed and unsealed transverse cracks at all levels of severity, divided by test section length in accordance with current pavement MEPDG distress definitions.",ft/mi,,As-Collected
+MON_DIS_AC_CRACK_INDEX,MEPDG_LONG_CRACK_LENGTH_AC,MEPDG AC Longitudinal Cracking Length,Total length of sealed and unsealed longitudinal cracks in the wheelpath at all severity levels divided by test section length.,ft/mi,,As-Collected
+MON_DIS_AC_CRACK_INDEX,ME_PERCENT_WHEEL_PATH_CRACK,MEPDG Wheel Path Cracking Percentage,Percentage of cracking in assumed 0.61 meter wide wheel paths corresponding to the MEPDG_CRACKING_PERCENT_AC field reported in the 2016 and 2017 LTPP data releases,%,,As-Collected
+MON_DIS_AC_REV,STATE_CODE,State Code,Numerical code for state or province. U.S. codes are consistent with Federal Information Processing Standards.,,STATE_PROVINCE,
+MON_DIS_AC_REV,STATE_CODE_EXP,State Code (Code Expansion),Numerical code for state or province. U.S. codes are consistent with Federal Information Processing Standards. (Code Expansion),,,
+MON_DIS_AC_REV,SHRP_ID,LTPP Section Identifier,Test section identification number assigned by LTPP program. Must be combined with STATE_CODE to be unique.,,,
+MON_DIS_AC_REV,SURVEY_DATE,Survey Date,Date survey was performed.,,,
+MON_DIS_AC_REV,CONSTRUCTION_NO,Construction Number,Event number used to relate changes in pavement structure with other time dependent data elements. This field is set to 1 when a test section is initially accepted into LTPP and is incremented with each change to the layer structure.,,,
+MON_DIS_AC_REV,GATOR_CRACK_A_L,Low Severity Alligator Cracking Area,"Area of alligator (fatigue) cracking of low severity. (no or few connecting cracks, not spalled or sealed, no pumping evident.)",sq m,,As-Collected
+MON_DIS_AC_REV,GATOR_CRACK_A_M,Medium Severity Alligator Cracking Area,"Area of alligator (fatigue) cracking of moderate severity. (interconnected cracks possibly slightly spalled, may be sealed, pumping may be evident.)",sq m,,As-Collected
+MON_DIS_AC_REV,GATOR_CRACK_A_H,High Severity Alligator Cracking Area,"Area of alligator (fatigue) cracking of high severity. (moderately or severely spalled interconnected cracks, may be sealed, pumping may be evident.)",sq m,,As-Collected
+MON_DIS_AC_REV,BLK_CRACK_A_L,Low Severity Block Cracking Area,Area of low severity block cracking. (cracks of unknown width well sealed or with mean width of 6 mm or less.),sq m,,As-Collected
+MON_DIS_AC_REV,BLK_CRACK_A_M,Medium Severity Block Cracking Area,Area of moderate severity block cracking. (mean crack width from 6 to 19 mm or under 19 mm with adjacent low severity random cracking.),sq m,,As-Collected
+MON_DIS_AC_REV,BLK_CRACK_A_H,High Severity Block Cracking Area,Area of high severity block cracking. (mean crack width greater than 19 mm or under 19 mm with moderate to high severity random cracking.),sq m,,As-Collected
+MON_DIS_AC_REV,EDGE_CRACK_L_L,Low Severity Edge Crack Length,Length of low severity edge cracking.,m,,As-Collected
+MON_DIS_AC_REV,EDGE_CRACK_L_M,Medium Severity Edge Crack Length,Length of moderate severity edge cracking.,m,,As-Collected
+MON_DIS_AC_REV,EDGE_CRACK_L_H,High Severity Edge Crack Length,Length of high severity edge cracking.,m,,As-Collected
+MON_DIS_AC_REV,LONG_CRACK_WP_L_L,Low Severity Wheel Path Longitudinal Crack Length,"Length of low severity, longitudinal cracking in wheel path. (cracks of unknown width well sealed or with mean width of 6 mm or less.)",m,,As-Collected
+MON_DIS_AC_REV,LONG_CRACK_WP_L_M,Medium Severity Wheel Path Longitudinal Crack Length,"Length of moderate severity, longitudinal cracking in wheel path. (mean crack width from 6 to 19 mm or under 19 mm with adjacent low severity random cracking.)",m,,As-Collected
+MON_DIS_AC_REV,LONG_CRACK_WP_L_H,High Severity Wheel Path Longitudinal Crack Length,"Length of high severity, longitudinal cracking in wheel path. (mean crack width greater than 19 mm or under 19 mm with adjacent moderate to high severity random cracking.)",m,,As-Collected
+MON_DIS_AC_REV,LONG_CRACK_WP_SEAL_L_L,Low Severity Well-Sealed Wheel Path Longitudinal Crack Length,"Length of low severity, well sealed longitudinal cracking in wheel path. (cracks of unknown width or with mean width of 6 mm or less.)",m,,As-Collected
+MON_DIS_AC_REV,LONG_CRACK_WP_SEAL_L_M,Medium Severity Well-Sealed Wheel Path Longitudinal Crack Length,"Length of moderate severity, well sealed longitudinal cracking in wheel path. (mean crack width from 6 to 19 mm or under 19 mm with adjacent low severity random cracking.)",m,,As-Collected
+MON_DIS_AC_REV,LONG_CRACK_WP_SEAL_L_H,High Severity Well-Sealed Wheel Path Longitudinal Crack Length,"Length of high severity, well sealed longitudinal cracking in wheel path. (crack mean width greater than 19 mm or under 19 mm with adjacent moderate to high severity random cracking.)",m,,As-Collected
+MON_DIS_AC_REV,LONG_CRACK_NWP_L_L,Low Severity Non-Wheel Path Longitudinal Crack Length,"Length of low severity, non-wheel path longitudinal cracking. (cracks of unknown width well sealed or with mean width of 6 mm or less.)",m,,As-Collected
+MON_DIS_AC_REV,LONG_CRACK_NWP_L_M,Medium Severity Non-Wheel Path Longitudinal Crack Length,"Length of moderate severity, non-wheel path longitudinal cracking. (mean crack width from 6 to 19 mm or under 19 mm with adjacent low severity random cracking.)",m,,As-Collected
+MON_DIS_AC_REV,LONG_CRACK_NWP_L_H,High Severity Non-Wheel Path Longitudinal Crack Length,"Length of high severity, non-wheel path longitudinal cracking. (mean crack width greater than 19 mm or under 19 mm with adjacent moderate to high severity random cracking.)",m,,As-Collected
+MON_DIS_AC_REV,LONG_CRACK_NWP_SEAL_L_L,Low Severity Non-Wheel Path Well-Sealed Longitudinal Crack Length,"Length of low severity, well sealed non-wheel path longitudinal cracking. (cracks of unknown width or with mean width of 6 mm or less.)",m,,As-Collected
+MON_DIS_AC_REV,LONG_CRACK_NWP_SEAL_L_M,Medium Severity Non-Wheel Path Well-Sealed Longitudinal Crack Length,"Length of moderate severity, well sealed non-wheel path longitudinal cracking. (mean crack width from 6 to 19 mm or under 19 mm with adjacent low severity random cracking.)",m,,As-Collected
+MON_DIS_AC_REV,LONG_CRACK_NWP_SEAL_L_H,High Severity Non-Wheel Path Well-Sealed Longitudinal Crack Length,"Length of high severity, well sealed non-wheel path longitudinal cracking. (mean crack width greater than 19 mm or under 19 mm with adjacent moderate to high severity random cracking.)",m,,As-Collected
+MON_DIS_AC_REV,TRANS_CRACK_NO_L,Low Severity Transverse Cracks Number,Number of low severity transverse cracks. (cracks of unknown width well sealed or with mean width of 6 mm or less.),,,
+MON_DIS_AC_REV,TRANS_CRACK_NO_M,Medium Severity Transverse Cracks Number,Number of moderate severity transverse cracks. (mean crack width from 6 to 19 mm or under 19 mm with adjacent low severity random cracking.),,,
+MON_DIS_AC_REV,TRANS_CRACK_NO_H,High Severity Transverse Cracks Number,Number of high severity transverse cracks. (mean crack width greater than 19 mm or under 19 mm with adjacent moderate to high severity random cracking.),,,
+MON_DIS_AC_REV,TRANS_CRACK_L_L,Low Severity Transverse Crack Length,Length of low severity transverse cracking. (cracks of unknown width well sealed or with mean width of 6 mm or less.),m,,As-Collected
+MON_DIS_AC_REV,TRANS_CRACK_L_M,Medium Severity Transverse Crack Length,Length of moderate severity transverse cracking. (crack mean width from 6 to 19 mm or under 19 mm with adjacent low severity random cracking.),m,,As-Collected
+MON_DIS_AC_REV,TRANS_CRACK_L_H,High Severity Transverse Crack Length,Length of high severity transverse cracking. (mean crack width greater than 19 mm or under 19 mm with adjacent moderate to high severity random cracking.),m,,As-Collected
+MON_DIS_AC_REV,TRANS_CRACK_SEAL_L_L,Low Severity Well Sealed Transverse Crack Length,"Length of well sealed, low severity transverse cracking. (cracks of unknown width or with mean width of 6 mm or less.)",m,,As-Collected
+MON_DIS_AC_REV,TRANS_CRACK_SEAL_L_M,Medium Severity Well Sealed Transverse Crack Length,"Length of well sealed, moderate severity transverse cracking. (mean crack width from 6 to 19 mm or under 19 mm with adjacent low severity random cracking.)",m,,As-Collected
+MON_DIS_AC_REV,TRANS_CRACK_SEAL_L_H,High Severity Well Sealed Transverse Crack Length,"Length of well sealed, high severity transverse cracking. (mean crack width greater than 19 mm or under 19 mm with adjacent moderate to high severity random cracking.)",m,,As-Collected
+MON_DIS_AC_REV,PATCH_NO_L,Low Severity Patches Number,Number of patches/patch deteriorations with low severity distress of any type.,,,
+MON_DIS_AC_REV,PATCH_NO_M,Medium Severity Patches Number,Number of patches/patch deteriorations with moderate severity distress of any type.,,,
+MON_DIS_AC_REV,PATCH_NO_H,High Severity Patches Number,Number of patches/patch deteriorations with high severity distress of any type.,,,
+MON_DIS_AC_REV,PATCH_A_L,Low Severity Patches Area,Area of patching with low severity distress or patch deterioration.,sq m,,As-Collected
+MON_DIS_AC_REV,PATCH_A_M,Medium Severity Patches Area,Area of patching with moderate severity distress or patch deterioration.,sq m,,As-Collected
+MON_DIS_AC_REV,PATCH_A_H,High Severity Patches Area,Area of patching with high severity distress or patch deterioration.,sq m,,As-Collected
+MON_DIS_AC_REV,POTHOLES_NO_L,Low Severity Potholes Number,Number of low severity potholes (less than 25 mm deep).,,,
+MON_DIS_AC_REV,POTHOLES_NO_M,Medium Severity Potholes Number,Number of moderate severity potholes (from 25 to 50 mm deep).,,,
+MON_DIS_AC_REV,POTHOLES_NO_H,High Severity Potholes Number,Number of high severity potholes (more than 50 mm deep).,,,
+MON_DIS_AC_REV,POTHOLES_A_L,Low Severity Pothole Area,Area of low severity potholes (less than 25 mm deep).,sq m,,As-Collected
+MON_DIS_AC_REV,POTHOLES_A_M,Medium Severity Pothole Area,Area of moderate severity potholes (from 25 to 50 mm deep).,sq m,,As-Collected
+MON_DIS_AC_REV,POTHOLES_A_H,High Severity Pothole Area,Area of high severity potholes (more than 50 mm deep).,sq m,,As-Collected
+MON_DIS_AC_REV,SHOVING_NO,Shoving Number,Number of areas where shoving exists.,,,
+MON_DIS_AC_REV,SHOVING_A,Shoving Area,"Area of shoving, localized longitudinal displacement of the pavement surface.",sq m,,As-Collected
+MON_DIS_AC_REV,BLEEDING,Bleeding Area,"Presence of excess asphalt on the pavement surface which may create a shiny, glass-like reflective surface.",sq m,,As-Collected
+MON_DIS_AC_REV,POLISH_AGG_A,Polished Aggregate Area,Area of polished aggregate (binder worn away to expose coarse aggregate).,sq m,,As-Collected
+MON_DIS_AC_REV,RAVELING,Raveling Area,Wearing away of the pavement surface caused by the dislodging of aggregate particles and loss of asphalt binder.,sq m,,As-Collected
+MON_DIS_AC_REV,PUMPING_NO,Pumping and Bleeding Number,Number of occurrences of water bleeding and pumping.,,,
+MON_DIS_AC_REV,PUMPING_L,Pumping and Bleeding Length,Length of pavement affected by water bleeding and pumping.,m,,As-Collected
+MON_DIS_AC_REV,OTHER,Other,Description of surface distress present but not otherwise accounted for by the survey.,,,
+MON_DIS_AC_REV,SURVEY_WIDTH,Survey Width,Width of pavement surveyed for distress measurements.,m,,As-Collected
+MON_DIS_AC_REV,WP_LENGTH_CRACKED,Wheel Path Length Cracked,Wheelpath cracking length.,m,,As-Collected
+MON_DIS_AC_REV,TRANS_CRACK_L_GT183,Transverse Crack Length Greater Than 1.83m,Total length of transverse cracks greater than 1.83 meters.,m,,As-Collected
+MON_HSS_PROFILE_SECTION,VISIT_DATE,Visit Date,Date the profile visit was started.,,,
+MON_HSS_PROFILE_SECTION,CONSTRUCTION_NO,Construction Number,Event number used to relate changes in pavement structure with other time dependent data elements. This field is set to 1 when a test section is initially accepted into LTPP and is incremented with each change to the layer structure.,,,
+MON_HSS_PROFILE_SECTION,STATE_CODE,State Code,Numerical code for state or province. U.S. codes are consistent with Federal Information Processing Standards.,,STATE_PROVINCE,
+MON_HSS_PROFILE_SECTION,STATE_CODE_EXP,State Code (Code Expansion),Numerical code for state or province. U.S. codes are consistent with Federal Information Processing Standards. (Code Expansion),,,
+MON_HSS_PROFILE_SECTION,VISIT_NO,Longitudinal Survey Unique Visit Number,Unique identification for each site visit made by profiling equipment.,,,
+MON_HSS_PROFILE_SECTION,RUN_NUMBER,Longitudinal Survey Run Number,Number indicating the position of the run in the series.,,,
+MON_HSS_PROFILE_SECTION,SHRP_ID,LTPP Section Identifier,Test section identification number assigned by LTPP program. Must be combined with STATE_CODE to be unique.,,,
+MON_HSS_PROFILE_SECTION,IRI_LEFT_WHEEL_PATH,Left Wheel Path IRI,IRI value for left wheel path.,m/km,,As-Collected
+MON_HSS_PROFILE_SECTION,IRI_RIGHT_WHEEL_PATH,Right Wheel Path IRI,IRI value for right wheel path.,m/km,,As-Collected
+MON_HSS_PROFILE_SECTION,IRI_CENTER_LANE,Center Lane IRI,IRI value for center of the lane.,m/km,,As-Collected
+MON_HSS_PROFILE_SECTION,MRI,Mean Roughness Index,Mean Roughness Index - Average of the left and right wheel path IRI values.,m/km,,As-Collected
+SHRP_INFO,STATE_CODE,State Code,Numerical code for state or province. U.S. codes are consistent with Federal Information Processing Standards.,,STATE_PROVINCE,
+SHRP_INFO,STATE_CODE_EXP,State Code (Code Expansion),Numerical code for state or province. U.S. codes are consistent with Federal Information Processing Standards. (Code Expansion),,,
+SHRP_INFO,SHRP_ID,LTPP Section Identifier,Test section identification number assigned by LTPP program. Must be combined with STATE_CODE to be unique.,,,
+SHRP_INFO,START_DATE,Start Date,Beginning of the interval for which the data applies.,,,
+SHRP_INFO,RECORD_STATUS,Record Status,A code indicating the general quality of the data.,,,
+SHRP_INFO,END_DATE,End Date,End of interval for which the data applies.,,,
+SHRP_INFO,VOLUME_SITE,Volume Site,Site identifier for location at which volume was collected.,,,
+SHRP_INFO,CLASS_SITE,Classification Site,Site identifier for location at which class was collected.,,,
+SHRP_INFO,WIM_SITE,WIM Site Identifier,Site identifier for location at which WIM was collected.,,,
+SHRP_INFO,ID3,Three Digit Station Identifier,"Three digit station identifier used by agency to identify data location for 2-, 3-, 4-, and 7- cards.",,,
+SHRP_INFO,ID6,Six Digit Station Identifier,"Six digit station identifier used by agency to identify data collection on S- ,C-, and W- cards.",,,
+SHRP_INFO,LTPP_DIR,LTPP Lane Direction Code,Direction of LTPP lane using Traffic Monitoring Guide conventions.,,DIR_TRF,
+SHRP_INFO,LTPP_DIR_EXP,LTPP Lane Direction Code (Code Expansion),Direction of LTPP lane using Traffic Monitoring Guide conventions. (Code Expansion),,,
+SHRP_INFO,LTPP_LANE,LTPP Lane Number,Number of the LTPP lane where 1 is the outer through lane.,,,
+SHRP_INFO,LANES_LTPP_DIR,Number of Lanes in LTPP Direction,The total number of through lanes in the LTPP direction.,,,
+SHRP_INFO,LANES_NON_LTPP_DIR,Number of Lanes in Non-LTPP Direction,The total number of through lanes in the non-LTPP direction.,,,
+SHRP_INFO,SRO_CLASS,Classification Site to LTPP Section Relationship Code,"Qualitative indicator of the spatial relationship between the classification data site and the LTPP section or project, S - site specific, R - Site related, O - other.",,SRO,
+SHRP_INFO,SRO_CLASS_EXP,Classification Site to LTPP Section Relationship Code (Code Expansion),"Qualitative indicator of the spatial relationship between the classification data site and the LTPP section or project, S - site specific, R - Site related, O - other. (Code Expansion)",,,
+SHRP_INFO,SRO_WEIGHT,Weight Site to LTPP Section Relationship Code,"Qualitative indicator of the spatial relationship between the weight data site and the LTPP section or project, S - site specific, R - Site related, O - other.",,SRO,
+SHRP_INFO,SRO_WEIGHT_EXP,Weight Site to LTPP Section Relationship Code (Code Expansion),"Qualitative indicator of the spatial relationship between the weight data site and the LTPP section or project, S - site specific, R - Site related, O - other. (Code Expansion)",,,
+SHRP_INFO,DATA_AVAILABILITY,Data Availability Code,A qualitative description of the data available and its reliability for the period indicated.,,DATA_AVAILABILITY,
+SHRP_INFO,DATA_AVAILABILITY_EXP,Data Availability Code (Code Expansion),A qualitative description of the data available and its reliability for the period indicated. (Code Expansion),,,
+SHRP_INFO,FUNC_CLASS,Functional Class Code,Functional class of the route where the LTPP section is located.,,FUNC_CLASS,
+SHRP_INFO,FUNC_CLASS_EXP,Functional Class Code (Code Expansion),Functional class of the route where the LTPP section is located. (Code Expansion),,,
+SHRP_INFO,COMMENTS,Comments,Notes by user on data issues,,,
+SHRP_INFO,CARD4INFO,4-Card Interpretation Code,Indicates how to process data after column 51 on the 4-Card input record. This value is typically S(top). A numeric value requires entries in Traffic_Class_Convert_Data.,,CARD4INFO,
+SHRP_INFO,CARD4INFO_EXP,4-Card Interpretation Code (Code Expansion),Indicates how to process data after column 51 on the 4-Card input record. This value is typically S(top). A numeric value requires entries in Traffic_Class_Convert_Data. (Code Expansion),,,
+SHRP_INFO,CARDCINFO,C-Card Interpretation Code,Indicates how to process data after column 89 on the C-Card input record. This value is typically S(top) for sites not under direct LTPP control where the value is 5(-digits/vehicle) as data is submitted for 15 not 13 classes. A numeric value requires entries in Traffic_Class_Convert_Data.,,CARDCINFO,
+SHRP_INFO,CARDCINFO_EXP,C-Card Interpretation Code (Code Expansion),Indicates how to process data after column 89 on the C-Card input record. This value is typically S(top) for sites not under direct LTPP control where the value is 5(-digits/vehicle) as data is submitted for 15 not 13 classes. A numeric value requires entries in Traffic_Class_Convert_Data. (Code Expansion),,,
+SHRP_INFO,ERR_1AM1PM,Error 1AM 1PM,For this site is the 1AM > 1PM daily class error enforced.,,,
+SHRP_INFO,ERR_8ZERO,Error 8 Zero,Indicator if the 8 + zero volume class error enforced. This is typically Y.,,,
+SHRP_INFO,ERR_4STATIC,Error 4 Static,Indicator if the 4 + Static volume daily class error enforced. This is typically Y.,,,
+SHRP_INFO,LTPP_LN_ONLY,LTPP Lane Only Loaded,Indicator if the LTPP Lane  is the only one loaded. This is typically N.,,,
+SHRP_INFO,USEFILENAME,Filename,Indicator if the files are identified and loaded by the filename. This is typically Y.,,,
+SHRP_INFO,UPDATE_LNDIR,Update Lane Direction,For this site change the loading lane (LOAD_LN) to the LTPP lane and only load this one lane. This is typically N.,,,
+SHRP_INFO,LOAD_LN,Load Lane,"For this site if UPDATE_LNDIR is Y, from the file load this lane and renumber it to the LTPP LN value.  The normal value is equal to LTPP_LN.",,,
+SHRP_INFO,LOAD_DIR,Loading Direction Code,"For this site if UPDATE_LNDIR is Y, from the file load this lane and renumber it to the LTPP DIR value.  The typical value is equal to LTPP_DIR.",,DIR_TRF,
+SHRP_INFO,LOAD_DIR_EXP,Loading Direction Code (Code Expansion),"For this site if UPDATE_LNDIR is Y, from the file load this lane and renumber it to the LTPP DIR value.  The typical value is equal to LTPP_DIR. (Code Expansion)",,,
+SHRP_INFO,LOAD_HOURS,Load Hours,"For this site, load data to HH_CL_CT table routinely. The value is typically N for any site not in SPSWIM_VALIDATION_INIT and Y otherwise. To capture days associated with time changes this value is set to Y. ",,,
+TRF_TREND,STATE_CODE,State Code,Numerical code for state or province. U.S. codes are consistent with Federal Information Processing Standards.,,STATE_PROVINCE,
+TRF_TREND,STATE_CODE_EXP,State Code (Code Expansion),Numerical code for state or province. U.S. codes are consistent with Federal Information Processing Standards. (Code Expansion),,,
+TRF_TREND,STATE_CODE,State Code,Numerical code for state or province. U.S. codes are consistent with Federal Information Processing Standards.,,STATE_PROVINCE,
+TRF_TREND,STATE_CODE_EXP,State Code (Code Expansion),Numerical code for state or province. U.S. codes are consistent with Federal Information Processing Standards. (Code Expansion),,,
+TRF_TREND,SHRP_ID,LTPP Section Identifier,Test section identification number assigned by LTPP program. Must be combined with STATE_CODE to be unique.,,,
+TRF_TREND,SHRP_ID,LTPP Section Identifier,Test section identification number assigned by LTPP program. Must be combined with STATE_CODE to be unique.,,,
+TRF_TREND,CONSTRUCTION_NO,Construction Number,Event number used to relate changes in pavement structure with other time dependent data elements. This field is set to 1 when a test section is initially accepted into LTPP and is incremented with each change to the layer structure.,,,
+TRF_TREND,CONSTRUCTION_NO,Construction Number,Event number used to relate changes in pavement structure with other time dependent data elements. This field is set to 1 when a test section is initially accepted into LTPP and is incremented with each change to the layer structure.,,,
+TRF_TREND,YEAR,Year,Year for which values apply.,,,
+TRF_TREND,YEAR,Year,Year for which values apply.,,,
+TRF_TREND,AADTT_VEH_CLASS_4_TREND,LTPP Lane Class 4 Annual Average Daily Traffic,AADTT estimate for class 4 vehicles in LTPP lane.,,,
+TRF_TREND,AADTT_VEH_CLASS_5_TREND,LTPP Lane Class 5 Annual Average Daily Traffic,AADTT estimate for class 5 vehicles in LTPP lane.,,,
+TRF_TREND,AADTT_VEH_CLASS_6_TREND,LTPP Lane Class 6 Annual Average Daily Traffic,AADTT estimate for class 6 vehicles in LTPP lane.,,,
+TRF_TREND,AADTT_VEH_CLASS_7_TREND,LTPP Lane Class 7 Annual Average Daily Traffic,AADTT estimate for class 7 vehicles in LTPP lane.,,,
+TRF_TREND,AADTT_VEH_CLASS_8_TREND,LTPP Lane Class 8 Annual Average Daily Traffic,AADTT estimate for class 8 vehicles in LTPP lane.,,,
+TRF_TREND,AADTT_VEH_CLASS_9_TREND,LTPP Lane Class 9 Annual Average Daily Traffic,AADTT estimate for class 9 vehicles in LTPP lane.,,,
+TRF_TREND,AADTT_VEH_CLASS_10_TREND,LTPP Lane Class 10 Annual Average Daily Traffic,AADTT estimate for class 10 vehicles in LTPP lane.,,,
+TRF_TREND,AADTT_VEH_CLASS_11_TREND,LTPP Lane Class 11 Annual Average Daily Traffic,AADTT estimate for class 11 vehicles in LTPP lane.,,,
+TRF_TREND,AADTT_VEH_CLASS_12_TREND,LTPP Lane Class 12 Annual Average Daily Traffic,AADTT estimate for class 12 vehicles in LTPP lane.,,,
+TRF_TREND,AADTT_VEH_CLASS_13_TREND,LTPP Lane Class 13 Annual Average Daily Traffic,AADTT estimate for class 13 vehicles in LTPP lane.,,,
+TRF_TREND,CMLTV_VOL_VEH_CLASS_9_TREND,LTPP Lane Cumulative Class 9 Volume,"Cumulative volume estimate of class 9 vehicles in LTPP lane, computed or estimated annually for all in-service years through the year specified in the YEAR field.",,,
+TRF_TREND,ANNUAL_ESAL_TREND,LTPP Lane Truck ESAL,Estimated annual ESAL for vehicle classes 4-13.,,,
+TRF_TREND,ANNUAL_GESAL_TREND,LTPP Lane Truck Generic ESAL,Estimated annual generic ESAL for vehicle classes 4-13.,,,
+TST_L05B,STATE_CODE,State Code,Numerical code for state or province. U.S. codes are consistent with Federal Information Processing Standards.,,STATE_PROVINCE,
+TST_L05B,STATE_CODE_EXP,State Code (Code Expansion),Numerical code for state or province. U.S. codes are consistent with Federal Information Processing Standards. (Code Expansion),,,
+TST_L05B,SHRP_ID,LTPP Section Identifier,Test section identification number assigned by LTPP program. Must be combined with STATE_CODE to be unique.,,,
+TST_L05B,CONSTRUCTION_NO,Construction Number,Event number used to relate changes in pavement structure with other time dependent data elements. This field is set to 1 when a test section is initially accepted into LTPP and is incremented with each change to the layer structure.,,,
+TST_L05B,LAYER_NO,Layer Number,"Unique sequential number assigned to pavement layers, starting with layer 1 as the deepest layer (subgrade).",,,
+TST_L05B,PROJECT_LAYER_CODE,Project Layer Code,Sequential alphabetic code assigned to identify group project wide layers.,,,
+TST_L05B,DESCRIPTION,Layer Description Code,Code indicating general type of layer.,,DESCRIPTION,
+TST_L05B,DESCRIPTION_EXP,Layer Description Code (Code Expansion),Code indicating general type of layer. (Code Expansion),,,
+TST_L05B,LAYER_TYPE,Layer Type Code,Code identifying the type of layer.,,LAYER_TYPE,
+TST_L05B,LAYER_TYPE_EXP,Layer Type Code (Code Expansion),Code identifying the type of layer. (Code Expansion),,,
+TST_L05B,REPR_THICKNESS,Representative Thickness,Representative thickness for a layer in a section.,in,,As-Collected
+TST_L05B,MATL_CODE,Material Code,Code corresponding to the material type classification.,,MATERIAL,
+TST_L05B,MATL_CODE_EXP,Material Code (Code Expansion),Code corresponding to the material type classification. (Code Expansion),,,
+TST_L05B,LAYER_COMMENT1,Layer Comment  Code 1,Codes to describe any additional information concerning layer.,,L05B_COMMENT_CODES,
+TST_L05B,LAYER_COMMENT1_EXP,Layer Comment  Code 1 (Code Expansion),Codes to describe any additional information concerning layer. (Code Expansion),,,
+TST_L05B,LAYER_COMMENT2,Layer Comment  Code 2,Codes to describe any additional information concerning layer.,,L05B_COMMENT_CODES,
+TST_L05B,LAYER_COMMENT2_EXP,Layer Comment  Code 2 (Code Expansion),Codes to describe any additional information concerning layer. (Code Expansion),,,
+TST_L05B,LAYER_COMMENT3,Layer Comment  Code 3,Codes to describe any additional information concerning layer.,,L05B_COMMENT_CODES,
+TST_L05B,LAYER_COMMENT3_EXP,Layer Comment  Code 3 (Code Expansion),Codes to describe any additional information concerning layer. (Code Expansion),,,
+TST_L05B,COMMENT_NOTE,Comment Note,Additional comments about layer.,,,
+TST_L05B,INV_LAYER_NO,Inventory Layer Number,First layer in inventory to which the testing layer corresponds.,,,
+TST_L05B,INV_LAYER_NO_2,Inventory Layer Number 2,Last layer in inventory to which the testing layer corresponds.,,,
+TST_L05B,RECORD_STATUS,Record Status,A code indicating the general quality of the data.,,,
