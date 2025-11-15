@@ -1,0 +1,12 @@
+TABLE_NAME,TABLE_ALIAS,TABLE_DESCRIPTION,CLASS_NAME
+EXPERIMENT_SECTION,Experiment Section,"Contains the time history of changes in construction numbers, experiment designations, and reasons for these changes.",Experiment Type and Improvement (M&R) History
+MON_DIS_AC_REV,AC Distress Survey Ratings,Distress survey ratings from manual field inspections of pavements with AC surfaces,Manual Distress
+SHRP_INFO,LTPP Traffic Site Information,Data describing the traffic data relationships and site conditions for a given SPS project or GPS Site.,Site Characteristics
+TST_L05B,Material Characterization and Thickness Data,Table containing layer descriptions for all constructions.,Representative Pavement Structure
+MON_DIS_AC_CRACK_INDEX,AC Pavement Cracking Indices,Cracking Indices For AC Pavements using HPMS and MEDPG definitions,HPMS/MEPDG Distress
+MON_HSS_PROFILE_SECTION,Longitudinal Profile Section Summary,High Speed Survey section level profile computed parameters and statistics based on 150 mm interval data.,Section Level IRI
+TRF_TREND,Annual Trends in Traffic Characteristics,Table for annual traffic statistics computed or estimated for each in-service and in-experiment year.,"Traffic Loading Characteristics (ESALS, GESALs, Total GVW)"
+TRF_TREND,Annual Trends in Traffic Characteristics,Table for annual traffic statistics computed or estimated for each in-service and in-experiment year.,Truck Volumes
+TRF_TREND,Annual Trends in Traffic Characteristics,Table for annual traffic statistics computed or estimated for each in-service and in-experiment year.,"Traffic Loading Characteristics (ESALS, GESALs, Total GVW)"
+TRF_TREND,Annual Trends in Traffic Characteristics,Table for annual traffic statistics computed or estimated for each in-service and in-experiment year.,Truck Volumes
+TRF_TREND,Annual Trends in Traffic Characteristics,Table for annual traffic statistics computed or estimated for each in-service and in-experiment year.,Vehicle Classification
